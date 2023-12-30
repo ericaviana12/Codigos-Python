@@ -1,0 +1,110 @@
+1Introdução
+
+2Python é uma das linguagens de programação mais populares e amplamente utilizadas no mundo. Com sua sintaxe simples e legibilidade, é uma ótima opção para iniciantes que desejam aprender a programar. Neste artigo, vamos apresentar os melhores códigos Python para iniciantes, que ajudarão você a dar os primeiros passos nessa linguagem incrível.
+
+31.	Olá, Mundo!
+
+4O “Olá, Mundo!” é o programa clássico de introdução em qualquer linguagem de programação. Ele consiste em exibir a frase “Olá, Mundo!” na tela. Em Python, o código para isso é extremamente simples:
+
+5    print("Olá, Mundo!")
+
+62.	Calculadora Simples
+
+7Uma calculadora simples é um ótimo exercício para começar a explorar os recursos do Python. Com apenas algumas linhas de código, podemos criar uma calculadora que realiza operações básicas, como adição, subtração, multiplicação e divisão. Veja um exemplo:
+
+8    num1 = float(input("Digite o primeiro número: "))
+9num2 = float(input("Digite o segundo número: "))
+
+10soma = num1 + num2
+11subtracao = num1 - num2
+12multiplicacao = num1 * num2
+13divisao = num1 / num2
+
+14print("Soma:", soma)
+15print("Subtração:", subtracao)
+16print("Multiplicação:", multiplicacao)
+17print("Divisão:", divisao)
+
+183.	Verificando se um Número é Par ou Ímpar
+
+19Outro exercício interessante é criar um programa que verifica se um número é par ou ímpar. Podemos utilizar o operador de módulo (%) para obter o resto da divisão por 2. Se o resto for igual a 0, o número é par; caso contrário, é ímpar. Veja o código:
+
+20    num = int(input("Digite um número: "))
+
+21if num % 2 == 0:
+22    print("O número é par.")
+23else:
+24    print("O número é ímpar.")
+
+254.	Gerando Números Aleatórios
+
+26Python possui uma biblioteca chamada “random” que permite gerar números aleatórios. Podemos usar essa biblioteca para criar um programa que gera um número aleatório dentro de um intervalo especificado. Veja o código:
+
+27    import random
+
+28num_min = int(input("Digite o valor mínimo: "))
+29num_max = int(input("Digite o valor máximo: "))
+
+30numero_aleatorio = random.randint(num_min, num_max)
+
+31print("Número aleatório:", numero_aleatorio)
+
+32Aprenda a Programar em Python com Exemplos Práticos
+
+33Aprender a programar em Python pode parecer um desafio no início, mas com exemplos práticos, fica muito mais fácil compreender os conceitos e desenvolver suas habilidades. Nesta seção, vamos explorar alguns exemplos práticos que o ajudarão a aprender a programar em Python de forma divertida e interativa.
+
+341.	Jogo da Velha
+
+35O jogo da velha é um clássico dos passatempos e pode ser implementado facilmente em Python. Com o uso de listas e estruturas de controle, podemos criar um programa que permite dois jogadores se enfrentarem em uma partida de jogo da velha. Veja o código:
+
+36tabuleiro = [" " for _ in range(9)]
+
+37def imprimir_tabuleiro():
+38    print("|" + tabuleiro[0] + "|" + tabuleiro[1] + "|" + tabuleiro[2] + "|")
+39    print("|" + tabuleiro[3] + "|" + tabuleiro[4] + "|" + tabuleiro[5] + "|")
+40    print("|" + tabuleiro[6] + "|" + tabuleiro[7] + "|" + tabuleiro[8] + "|")
+
+41imprimir_tabuleiro()
+
+422.	Conversor de Temperatura
+
+43Um conversor de temperatura é um exemplo prático que demonstra como realizar cálculos simples em Python. Podemos criar um programa que converte temperaturas de Celsius para Fahrenheit e vice-versa. Veja o código:
+
+44    def celsius_para_fahrenheit(temp_celsius):
+45    return (temp_celsius * 9/5) + 32
+
+46def fahrenheit_para_celsius(temp_fahrenheit):
+47    return (temp_fahrenheit - 32) * 5/9
+
+48temp_celsius = float(input("Digite a temperatura em Celsius: "))
+49temp_fahrenheit = float(input("Digite a temperatura em Fahrenheit: "))
+
+50print(temp_celsius, "graus Celsius equivalem a", celsius_para_fahrenheit(temp_celsius), "graus Fahrenheit.")
+51print(temp_fahrenheit, "graus Fahrenheit equivalem a", fahrenheit_para_celsius(temp_fahrenheit), "graus Celsius.")
+52  
+533.	Gerador de Senhas Aleatórias
+
+54A segurança é uma preocupação constante nos dias de hoje. Podemos criar um programa em Python que gera senhas aleatórias e seguras. Com o uso da biblioteca “random” e de strings, podemos criar senhas complexas que ajudarão a proteger suas informações. Veja o código:
+
+55    import random
+56import string
+
+57def gerar_senha(tamanho):
+58    caracteres = string.ascii_letters + string.digits + string.punctuation
+59    senha = ''.join(random.choice(caracteres) for _ in range(tamanho))
+60    return senha
+
+61tamanho_senha = int(input("Digite o tamanho da senha desejada: "))
+
+62print("Senha gerada:", gerar_senha(tamanho_senha))
+63 
+644.	Contador de Palavras em um Texto
+
+65Um programa que conta a quantidade de palavras em um texto pode ser útil em diversas situações. Podemos criar um programa em Python que recebe um texto como entrada e retorna o número de palavras presentes nele. Veja o código:
+
+66    texto = input("Digite um texto: ")
+
+67palavras = texto.split()
+68quantidade_palavras = len(palavras)
+
+69print("O texto contém", quantidade_palavras, "palavras.")
