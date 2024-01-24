@@ -1,4 +1,4 @@
-    import random
+import random
 
 num_min = int(input("Digite o valor mínimo: "))
 num_max = int(input("Digite o valor máximo: "))
